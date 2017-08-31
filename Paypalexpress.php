@@ -159,16 +159,15 @@ public function calculatePaypalFee($fee) {
 public function updatePriceAction(){
 
 $paypalConfigMapper = Paypalexpress_Models_Mapper_PaypalExpressSettingsMapper::getInstance();
-			    $paypalSettings = $paypalConfigMapper->selectSettings();
-				$paypalfee = $paypalSettings[0]->getPaypalfee();
+$paypalSettings = $paypalConfigMapper->selectSettings();
+$paypalfee = $paypalSettings[0]->getPaypalfee();
 
 if($this->_request->isPost()){ 
 
 $this->_responseHelper->success($this->calculatePaypalFee($paypalfee));
-}else {
-
-
 }
+
+
 }
 
 
@@ -234,9 +233,12 @@ public function _makeOptionPaypalbutton() {
 							
 				
 				if($usePaypalfee){
+					
+				$summary = $this->_cartStorage->calculate();
+					
 				$paypalfee = $paypalSettings[0]->getPaypalfee();
 				$product = $this->_productMapper->find(999999);//Sucht den PaypalExpress Atikel für die Darstellung der Gebühr
-				$product->setPrice($this->calculatePaypalFee($paypalfee));//Berechnet die Gebühr			
+				$product->setPrice($this->calculatePaypalFee($paypalfee)-$summary['total']);//Berechnet die Gebühr			
 								
 				$this->_cartStorage->add($product, null, 1);//fügt den Artikel zur Bestellung hinzu
 				
