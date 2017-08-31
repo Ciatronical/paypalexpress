@@ -1,0 +1,4043 @@
+2017-08-25 13:22:49 -> test
+2017-08-25 14:12:12 -> test
+2017-08-25 14:15:20 -> test
+2017-08-25 14:20:59 -> productionID
+2017-08-25 14:20:59 -> sandboxID
+2017-08-25 14:20:59 -> 1
+2017-08-25 14:26:47 -> test
+2017-08-25 14:26:47 -> test
+2017-08-25 14:26:47 -> 1
+2017-08-25 14:27:28 -> test
+2017-08-25 14:27:28 -> test
+2017-08-25 14:27:28 -> 1
+2017-08-25 14:32:33 -> test
+2017-08-25 14:32:33 -> test
+2017-08-25 14:32:33 -> 1
+2017-08-25 14:33:47 -> test2
+2017-08-25 14:33:47 -> test1
+2017-08-25 14:33:47 -> 1
+2017-08-25 14:35:50 -> 0
+2017-08-25 14:36:08 -> 0
+2017-08-25 15:11:08 -> Paypal_Models_Mapper_PaypalConfigMapper Object
+(
+    [_dbTable:protected] => Paypal_Models_Dbtables_PaypalConfigDbtable Object
+        (
+            [_name:protected] => plugin_paypal_settings
+            [_definition:protected] => 
+            [_definitionConfigName:protected] => 
+            [_db:protected] => Zend_Db_Adapter_Pdo_Mysql Object
+                (
+                    [_pdoType:protected] => mysql
+                    [_numericDataTypes:protected] => Array
+                        (
+                            [0] => 0
+                            [1] => 1
+                            [2] => 2
+                            [INT] => 0
+                            [INTEGER] => 0
+                            [MEDIUMINT] => 0
+                            [SMALLINT] => 0
+                            [TINYINT] => 0
+                            [BIGINT] => 1
+                            [SERIAL] => 1
+                            [DEC] => 2
+                            [DECIMAL] => 2
+                            [DOUBLE] => 2
+                            [DOUBLE PRECISION] => 2
+                            [FIXED] => 2
+                            [FLOAT] => 2
+                        )
+
+                    [_defaultStmtClass:protected] => Zend_Db_Statement_Pdo
+                    [_config:protected] => Array
+                        (
+                            [host] => localhost
+                            [username] => root
+                            [password] => windossa5one
+                            [dbname] => seotoaster
+                            [driver_options] => Array
+                                (
+                                    [1002] => SET NAMES UTF8;
+                                    [1000] => 1
+                                )
+
+                            [charset] => 
+                            [persistent] => 
+                            [options] => Array
+                                (
+                                    [caseFolding] => 0
+                                    [autoQuoteIdentifiers] => 1
+                                    [fetchMode] => 2
+                                )
+
+                        )
+
+                    [_fetchMode:protected] => 2
+                    [_profiler:protected] => Zend_Db_Profiler Object
+                        (
+                            [_queryProfiles:protected] => Array
+                                (
+                                )
+
+                            [_enabled:protected] => 
+                            [_filterElapsedSecs:protected] => 
+                            [_filterTypes:protected] => 
+                        )
+
+                    [_defaultProfilerClass:protected] => Zend_Db_Profiler
+                    [_connection:protected] => PDO Object
+                        (
+                        )
+
+                    [_caseFolding:protected] => 0
+                    [_autoQuoteIdentifiers:protected] => 1
+                    [_allowSerialization:protected] => 1
+                    [_autoReconnectOnUnserialize:protected] => 
+                )
+
+            [_schema:protected] => 
+            [_cols:protected] => Array
+                (
+                    [0] => id
+                    [1] => email
+                    [2] => apiSignature
+                    [3] => apiUser
+                    [4] => apiPassword
+                    [5] => useSandbox
+                )
+
+            [_primary:protected] => Array
+                (
+                    [1] => id
+                )
+
+            [_identity:protected] => 1
+            [_sequence:protected] => 1
+            [_metadata:protected] => Array
+                (
+                    [id] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => id
+                            [COLUMN_POSITION] => 1
+                            [DATA_TYPE] => int
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 1
+                            [PRIMARY_POSITION] => 1
+                            [IDENTITY] => 
+                        )
+
+                    [email] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => email
+                            [COLUMN_POSITION] => 2
+                            [DATA_TYPE] => varchar
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 255
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 
+                            [PRIMARY_POSITION] => 
+                            [IDENTITY] => 
+                        )
+
+                    [apiSignature] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => apiSignature
+                            [COLUMN_POSITION] => 3
+                            [DATA_TYPE] => varchar
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 255
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 
+                            [PRIMARY_POSITION] => 
+                            [IDENTITY] => 
+                        )
+
+                    [apiUser] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => apiUser
+                            [COLUMN_POSITION] => 4
+                            [DATA_TYPE] => varchar
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 255
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 
+                            [PRIMARY_POSITION] => 
+                            [IDENTITY] => 
+                        )
+
+                    [apiPassword] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => apiPassword
+                            [COLUMN_POSITION] => 5
+                            [DATA_TYPE] => varchar
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 255
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 
+                            [PRIMARY_POSITION] => 
+                            [IDENTITY] => 
+                        )
+
+                    [useSandbox] => Array
+                        (
+                            [SCHEMA_NAME] => 
+                            [TABLE_NAME] => plugin_paypal_settings
+                            [COLUMN_NAME] => useSandbox
+                            [COLUMN_POSITION] => 6
+                            [DATA_TYPE] => tinyint
+                            [DEFAULT] => 
+                            [NULLABLE] => 
+                            [LENGTH] => 
+                            [SCALE] => 
+                            [PRECISION] => 
+                            [UNSIGNED] => 
+                            [PRIMARY] => 
+                            [PRIMARY_POSITION] => 
+                            [IDENTITY] => 
+                        )
+
+                )
+
+            [_metadataCache:protected] => Zend_Cache_Core Object
+                (
+                    [_backend:protected] => Zend_Cache_Backend_File Object
+                        (
+                            [_options:protected] => Array
+                                (
+                                    [cache_dir] => /var/www/html/cache/
+                                    [file_locking] => 1
+                                    [read_control] => 1
+                                    [read_control_type] => crc32
+                                    [hashed_directory_level] => 3
+                                    [hashed_directory_perm] => 448
+                                    [file_name_prefix] => zend_cache
+                                    [cache_file_perm] => 384
+                                    [metadatas_array_max_size] => 100
+                                )
+
+                            [_metadatasArray:protected] => Array
+                                (
+                                    [fd76947394c2f309d643f5261315f5de] => Array
+                                        (
+                                            [hash] => 3813071926
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_Array_Options] => Array
+                                        (
+                                            [hash] => 2213333658
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_3769da8c3a6ef78125254c4663feb4c1_Array] => Array
+                                        (
+                                            [hash] => 4023506991
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_fda39ac17d039e27db41aced30ad5c88_Array] => Array
+                                        (
+                                            [hash] => 3594744799
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_7b5ff55702e1138b402f1c4181c656e4_Array] => Array
+                                        (
+                                            [hash] => 2946279078
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_02c518eaa5533d8ee9ea6bafcadfb016_Array] => Array
+                                        (
+                                            [hash] => 205841361
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_28ec94d29d31bd1cf6deff0f6cb5772c_Array] => Array
+                                        (
+                                            [hash] => 747761384
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_9fc6358317c5659c9b0bbf2c8d31d762_Array] => Array
+                                        (
+                                            [hash] => 446488664
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_507667d0a66cf44d36bce7a1894e2e62_Array] => Array
+                                        (
+                                            [hash] => 877372480
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_39b79634a6c9830050fee2ed4ec11ede_Array] => Array
+                                        (
+                                            [hash] => 1034358591
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_58f48e71239fda206f62c6b22fa147be_Array] => Array
+                                        (
+                                            [hash] => 4147597713
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_e65c6f4b13cb07b571ee491f84a10d7a_Array] => Array
+                                        (
+                                            [hash] => 3725528677
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [d43a1527be2f8b32b85869d804c66670] => Array
+                                        (
+                                            [hash] => 2205232278
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [plugins_includePath] => Array
+                                        (
+                                            [hash] => 2377745271
+                                            [mtime] => 1503664332
+                                            [expire] => 1503750732
+                                            [tags] => Array
+                                                (
+                                                    [0] => plugins
+                                                )
+
+                                        )
+
+                                    [plugins_plugin_translation_de] => Array
+                                        (
+                                            [hash] => 1947350696
+                                            [mtime] => 1503664332
+                                            [expire] => 1504528332
+                                            [tags] => Array
+                                                (
+                                                    [0] => plugins
+                                                    [1] => plugin_translation
+                                                )
+
+                                        )
+
+                                    [Zend_Translate_5c61f8851bff9d7f8b9ee9f14861c2e0_Array] => Array
+                                        (
+                                            [hash] => 2361085584
+                                            [mtime] => 1503666668
+                                            [expire] => 1503673868
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Translate
+                                                )
+
+                                        )
+
+                                    [plugins_enabledPlugins] => Array
+                                        (
+                                            [hash] => 1961554084
+                                            [mtime] => 1503664332
+                                            [expire] => 1503750732
+                                            [tags] => Array
+                                                (
+                                                    [0] => plugins
+                                                )
+
+                                        )
+
+                                    [104670eb78d7b5a84491696a266aceff] => Array
+                                        (
+                                            [hash] => 3388835904
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [c8b3b02878bc3aff835aa460e866b596] => Array
+                                        (
+                                            [hash] => 861102977
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [67c22ff3143b47390989a8cd16ece126] => Array
+                                        (
+                                            [hash] => 1143887114
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [ba250722b3a947ca123ed652fed3b8fd] => Array
+                                        (
+                                            [hash] => 1514981013
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_currencytoregion_US] => Array
+                                        (
+                                            [hash] => 245248331
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_nametocurrency_] => Array
+                                        (
+                                            [hash] => 744829587
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_nametocurrency_USD] => Array
+                                        (
+                                            [hash] => 2696603084
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_currencysymbol_] => Array
+                                        (
+                                            [hash] => 744829587
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_currencysymbol_USD] => Array
+                                        (
+                                            [hash] => 1829488957
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_en_US_currencysymbol_EUR] => Array
+                                        (
+                                            [hash] => 713688049
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [store_cart_checkoutpage] => Array
+                                        (
+                                            [hash] => 2362631259
+                                            [mtime] => 1503666636
+                                            [expire] => 1503666936
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_currencytoregion_DE] => Array
+                                        (
+                                            [hash] => 1354312890
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_nametocurrency_] => Array
+                                        (
+                                            [hash] => 744829587
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_nametocurrency_EUR] => Array
+                                        (
+                                            [hash] => 36366501
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_currencysymbol_] => Array
+                                        (
+                                            [hash] => 744829587
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_currencysymbol_EUR] => Array
+                                        (
+                                            [hash] => 713688049
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [Zend_LocaleC_de_DE_currencytoname_EUR] => Array
+                                        (
+                                            [hash] => 744829587
+                                            [mtime] => 1503664316
+                                            [expire] => 1503671516
+                                            [tags] => Array
+                                                (
+                                                    [0] => Zend_Locale
+                                                )
+
+                                        )
+
+                                    [plugins_enabledPluginsNames] => Array
+                                        (
+                                            [hash] => 4112405022
+                                            [mtime] => 1503664332
+                                            [expire] => 1503750732
+                                            [tags] => Array
+                                                (
+                                                    [0] => plugins
+                                                )
+
+                                        )
+
+                                    [bec21f23b2ef472a81f91c5a7e5b7ead] => Array
+                                        (
+                                            [hash] => 1518629738
+                                            [mtime] => 1503664315
+                                            [expire] => 1503671515
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [df35d8b20418e7c621abb1490b153b5c] => Array
+                                        (
+                                            [hash] => 3157029869
+                                            [mtime] => 1503666663
+                                            [expire] => 1503673863
+                                            [tags] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [_directives:protected] => Array
+                                (
+                                    [lifetime] => 7200
+                                    [logging] => 
+                                    [logger] => 
+                                )
+
+                        )
+
+                    [_options:protected] => Array
+                        (
+                            [write_control] => 1
+                            [caching] => 1
+                            [cache_id_prefix] => 
+                            [automatic_serialization] => 1
+                            [automatic_cleaning_factor] => 10
+                            [lifetime] => 7200
+                            [logging] => 
+                            [logger] => 
+                            [ignore_user_abort] => 1
+                        )
+
+                    [_specificOptions:protected] => Array
+                        (
+                        )
+
+                    [_lastId:Zend_Cache_Core:private] => df35d8b20418e7c621abb1490b153b5c
+                    [_extendedBackend:protected] => 1
+                    [_backendCapabilities:protected] => Array
+                        (
+                            [automatic_cleaning] => 1
+                            [tags] => 1
+                            [expired_read] => 1
+                            [priority] => 
+                            [infinite_lifetime] => 1
+                            [get_list] => 1
+                        )
+
+                )
+
+            [_metadataCacheInClass:protected] => 1
+            [_rowClass:protected] => Zend_Db_Table_Row
+            [_rowsetClass:protected] => Zend_Db_Table_Rowset
+            [_referenceMap:protected] => Array
+                (
+                )
+
+            [_dependentTables:protected] => Array
+                (
+                )
+
+            [_defaultSource:protected] => defaultNone
+            [_defaultValues:protected] => Array
+                (
+                )
+
+        )
+
+    [_model:protected] => Paypal_Models_Models_PaypalConfigModel
+)
+
+2017-08-25 15:21:11 -> info@flexrohr24.de
+2017-08-25 15:21:51 -> Paypal_Models_Models_PaypalConfigModel Object
+(
+    [_id:protected] => 
+    [_email:protected] => info@flexrohr24.de
+    [_apiSignature:protected] => An5ns1Kso7MWUdW4ErQKJJJ4qi4-A8qABGFW0rWyaajDeGito6S408op 
+    [_apiUser:protected] => info_api1.flexrohr24.de 
+    [_apiPassword:protected] => YW6M7YH9VM83JYPS 
+    [_useSandbox:protected] => 0
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:27:32 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:27:40 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:27:57 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:30:11 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:30:11 -> test
+2017-08-25 15:30:11 -> test
+2017-08-25 15:30:11 -> 1
+2017-08-25 15:30:37 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:30:37 -> 1
+2017-08-25 15:35:18 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:35:27 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:35:27 -> test
+2017-08-25 15:35:27 -> test
+2017-08-25 15:35:27 -> 1
+2017-08-25 15:35:27 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:45:33 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:45:50 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:45:50 -> test
+2017-08-25 15:45:50 -> test
+2017-08-25 15:45:50 -> 1
+2017-08-25 15:51:57 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:52:05 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 15:52:05 -> gg
+2017-08-25 15:52:05 -> dds
+2017-08-25 15:52:05 -> 1
+2017-08-25 16:05:26 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:05:36 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:05:36 -> test
+2017-08-25 16:05:36 -> test
+2017-08-25 16:05:36 -> 1
+2017-08-25 16:10:04 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:10:15 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:10:15 -> 1
+2017-08-25 16:10:15 -> 2
+2017-08-25 16:10:15 -> 1
+2017-08-25 16:10:42 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:12:57 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:13:05 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:13:05 -> 1
+2017-08-25 16:13:05 -> 2
+2017-08-25 16:13:05 -> 1
+2017-08-25 16:13:06 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:13:06 -> 1
+2017-08-25 16:13:06 -> 2
+2017-08-25 16:13:06 -> 1
+2017-08-25 16:16:20 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:20:23 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:20:30 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:20:30 -> 1
+2017-08-25 16:20:30 -> 2
+2017-08-25 16:20:30 -> 1
+2017-08-25 16:20:31 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:20:31 -> 1
+2017-08-25 16:20:31 -> 2
+2017-08-25 16:20:31 -> 1
+2017-08-25 16:32:29 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:32:44 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:32:44 -> 222222
+2017-08-25 16:32:44 -> 211111111
+2017-08-25 16:32:44 -> 0
+2017-08-25 16:36:20 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:36:31 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:36:31 -> 2222
+2017-08-25 16:36:31 -> 211111111
+2017-08-25 16:36:31 -> 1
+2017-08-25 16:36:31 -> setProdID 2222
+2017-08-25 16:38:42 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:38:56 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:38:56 -> 222222
+2017-08-25 16:38:56 -> 111111
+2017-08-25 16:38:56 -> 1
+2017-08-25 16:38:56 -> setProdID 222222
+2017-08-25 16:38:56 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:38:56 -> Test
+2017-08-25 16:41:02 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:41:14 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:41:14 -> 111111
+2017-08-25 16:41:14 -> 222222
+2017-08-25 16:41:14 -> 0
+2017-08-25 16:41:14 -> setProdID 111111
+2017-08-25 16:41:14 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:44:16 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:44:35 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:44:35 -> 55555555
+2017-08-25 16:44:35 -> 1111111111
+2017-08-25 16:44:35 -> 1
+2017-08-25 16:44:35 -> setProdID 55555555
+2017-08-25 16:44:35 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:45:23 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:45:23 -> 55555555
+2017-08-25 16:45:23 -> 
+2017-08-25 16:45:23 -> 1
+2017-08-25 16:45:23 -> setProdID 55555555
+2017-08-25 16:45:23 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:46:54 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:47:09 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:47:09 -> 55555555
+2017-08-25 16:47:09 -> 211111111
+2017-08-25 16:47:09 -> 1
+2017-08-25 16:47:09 -> setProdID 55555555
+2017-08-25 16:47:09 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:47:52 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:48:08 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:48:08 -> 4444444
+2017-08-25 16:48:08 -> 2222222
+2017-08-25 16:48:08 -> 1
+2017-08-25 16:48:08 -> setProdID 4444444
+2017-08-25 16:48:08 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:48:31 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:48:31 -> 4444444
+2017-08-25 16:48:31 -> 222222
+2017-08-25 16:48:31 -> 1
+2017-08-25 16:48:31 -> setProdID 4444444
+2017-08-25 16:48:31 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:51:19 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:51:28 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 16:51:28 -> 55555555
+2017-08-25 16:51:28 -> 33333
+2017-08-25 16:51:28 -> 1
+2017-08-25 16:51:28 -> setProdID 55555555
+2017-08-25 16:51:28 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 55555555
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 17:02:32 -> Paypalexpress_Models_Models_PaypalExpressSettingsModel Object
+(
+    [_id:protected] => 
+    [_prodID:protected] => 
+    [_sandID:protected] => 
+    [_useSandbox:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-25 17:02:32 -> setProdID 55555555
+2017-08-28 08:11:57 -> setProdID 55555555
+2017-08-28 08:12:38 -> setProdID 55555555
+2017-08-28 08:17:44 -> setProdID 55555555
+2017-08-28 08:25:17 -> setProdID 55555555
+2017-08-28 08:29:50 -> setProdID 55555555
+2017-08-28 08:29:50 -> 
+2017-08-28 08:33:55 -> setProdID 55555555
+2017-08-28 08:33:55 -> 
+2017-08-28 08:35:20 -> setProdID 55555555
+2017-08-28 08:35:20 -> 
+2017-08-28 08:39:49 -> setProdID 55555555
+2017-08-28 08:40:37 -> setProdID 55555555
+2017-08-28 08:40:59 -> setProdID 55555555
+2017-08-28 08:42:42 -> setProdID 55555555
+2017-08-28 08:43:14 -> setProdID 55555555
+2017-08-28 08:44:38 -> setProdID 55555555
+2017-08-28 08:44:38 -> 
+2017-08-28 08:45:47 -> setProdID 55555555
+2017-08-28 08:45:47 -> test
+2017-08-28 08:45:47 -> 
+2017-08-28 08:48:59 -> setProdID 55555555
+2017-08-28 08:48:59 -> test
+2017-08-28 08:48:59 -> 
+2017-08-28 08:49:42 -> setProdID 55555555
+2017-08-28 08:49:42 -> test
+2017-08-28 08:49:42 -> 
+2017-08-28 08:50:27 -> setProdID 55555555
+2017-08-28 08:50:27 -> test
+2017-08-28 08:50:27 -> 
+2017-08-28 08:54:10 -> setProdID 55555555
+2017-08-28 08:54:10 -> test
+2017-08-28 08:54:10 -> 
+2017-08-28 08:56:51 -> setProdID 55555555
+2017-08-28 08:56:51 -> test
+2017-08-28 08:56:51 -> Zend_View Object
+(
+    [_useViewStream:Zend_View:private] => 1
+    [_useStreamWrapper:Zend_View:private] => 
+    [_path:Zend_View_Abstract:private] => Array
+        (
+            [script] => Array
+                (
+                    [0] => /var/www/html/plugins/paypalexpress/system/views/
+                )
+
+            [helper] => Array
+                (
+                )
+
+            [filter] => Array
+                (
+                )
+
+        )
+
+    [_file:Zend_View_Abstract:private] => /var/www/html/plugins/paypalexpress/system/views/paypalbutton.phtml
+    [_helper:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filter:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterClass:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_escape:Zend_View_Abstract:private] => htmlspecialchars
+    [_encoding:Zend_View_Abstract:private] => UTF-8
+    [_lfiProtectionOn:Zend_View_Abstract:private] => 1
+    [_loaders:Zend_View_Abstract:private] => Array
+        (
+            [filter] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Filter_] => Array
+                                (
+                                    [0] => Zend/View/Filter/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+            [helper] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Helper_] => Array
+                                (
+                                    [0] => Zend/View/Helper/
+                                    [1] => /var/www/html/seotoaster_core/application/views/helpers/
+                                )
+
+                            [ZendX_JQuery_View_Helper_] => Array
+                                (
+                                    [0] => ZendX/JQuery/View/Helper/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+        )
+
+    [_loaderTypes:Zend_View_Abstract:private] => Array
+        (
+            [0] => filter
+            [1] => helper
+        )
+
+    [_strictVars:Zend_View_Abstract:private] => 
+    [websiteUrl] => http://localhost/
+    [pluginName] => tools_plugins_abstract
+    [secureToken] => 641aa2eaf17433909693966e685feff1
+    [weightSign] => kg
+    [summary] => Array
+        (
+            [subTotal] => 0.01
+            [discount] => 0
+            [totalTax] => 0
+            [total] => 0.01
+            [shippingTax] => 0
+            [discountTax] => 0
+            [subTotalTax] => 0
+            [shipping] => 0
+        )
+
+    [taxIncPrice] => 1
+    [returnAllowed] => 
+)
+
+2017-08-28 09:46:52 -> setProdID 55555555
+2017-08-28 09:46:52 -> test
+2017-08-28 09:46:52 -> Zend_View Object
+(
+    [_useViewStream:Zend_View:private] => 1
+    [_useStreamWrapper:Zend_View:private] => 
+    [_path:Zend_View_Abstract:private] => Array
+        (
+            [script] => Array
+                (
+                    [0] => /var/www/html/plugins/paypalexpress/system/views/
+                )
+
+            [helper] => Array
+                (
+                )
+
+            [filter] => Array
+                (
+                )
+
+        )
+
+    [_file:Zend_View_Abstract:private] => /var/www/html/plugins/paypalexpress/system/views/paypalbutton.phtml
+    [_helper:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filter:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterClass:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_escape:Zend_View_Abstract:private] => htmlspecialchars
+    [_encoding:Zend_View_Abstract:private] => UTF-8
+    [_lfiProtectionOn:Zend_View_Abstract:private] => 1
+    [_loaders:Zend_View_Abstract:private] => Array
+        (
+            [filter] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Filter_] => Array
+                                (
+                                    [0] => Zend/View/Filter/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+            [helper] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Helper_] => Array
+                                (
+                                    [0] => Zend/View/Helper/
+                                    [1] => /var/www/html/seotoaster_core/application/views/helpers/
+                                )
+
+                            [ZendX_JQuery_View_Helper_] => Array
+                                (
+                                    [0] => ZendX/JQuery/View/Helper/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+        )
+
+    [_loaderTypes:Zend_View_Abstract:private] => Array
+        (
+            [0] => filter
+            [1] => helper
+        )
+
+    [_strictVars:Zend_View_Abstract:private] => 
+    [websiteUrl] => http://localhost/
+    [pluginName] => tools_plugins_abstract
+    [secureToken] => 258469dc839ddf22b95f74b366c0f7b5
+    [weightSign] => kg
+    [summary] => Array
+        (
+            [subTotal] => 0
+            [discount] => 0
+            [totalTax] => 0
+            [total] => 0
+            [shippingTax] => 0
+            [discountTax] => 0
+            [subTotalTax] => 0
+            [shipping] => 0
+        )
+
+    [taxIncPrice] => 1
+    [returnAllowed] => 
+)
+
+2017-08-28 09:48:30 -> setProdID 55555555
+2017-08-28 09:48:30 -> test
+2017-08-28 09:48:30 -> Zend_View Object
+(
+    [_useViewStream:Zend_View:private] => 1
+    [_useStreamWrapper:Zend_View:private] => 
+    [_path:Zend_View_Abstract:private] => Array
+        (
+            [script] => Array
+                (
+                    [0] => /var/www/html/plugins/paypalexpress/system/views/
+                )
+
+            [helper] => Array
+                (
+                )
+
+            [filter] => Array
+                (
+                )
+
+        )
+
+    [_file:Zend_View_Abstract:private] => /var/www/html/plugins/paypalexpress/system/views/paypalbutton.phtml
+    [_helper:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filter:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterClass:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_escape:Zend_View_Abstract:private] => htmlspecialchars
+    [_encoding:Zend_View_Abstract:private] => UTF-8
+    [_lfiProtectionOn:Zend_View_Abstract:private] => 1
+    [_loaders:Zend_View_Abstract:private] => Array
+        (
+            [filter] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Filter_] => Array
+                                (
+                                    [0] => Zend/View/Filter/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+            [helper] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Helper_] => Array
+                                (
+                                    [0] => Zend/View/Helper/
+                                    [1] => /var/www/html/seotoaster_core/application/views/helpers/
+                                )
+
+                            [ZendX_JQuery_View_Helper_] => Array
+                                (
+                                    [0] => ZendX/JQuery/View/Helper/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+        )
+
+    [_loaderTypes:Zend_View_Abstract:private] => Array
+        (
+            [0] => filter
+            [1] => helper
+        )
+
+    [_strictVars:Zend_View_Abstract:private] => 
+    [websiteUrl] => http://localhost/
+    [pluginName] => tools_plugins_abstract
+    [secureToken] => 258469dc839ddf22b95f74b366c0f7b5
+    [weightSign] => kg
+    [summary] => Array
+        (
+            [subTotal] => 0
+            [discount] => 0
+            [totalTax] => 0
+            [total] => 0
+            [shippingTax] => 0
+            [discountTax] => 0
+            [subTotalTax] => 0
+            [shipping] => 0
+        )
+
+    [taxIncPrice] => 1
+    [returnAllowed] => 
+)
+
+2017-08-28 09:50:52 -> setProdID 55555555
+2017-08-28 09:50:52 -> test
+2017-08-28 09:50:52 -> Zend_View Object
+(
+    [_useViewStream:Zend_View:private] => 1
+    [_useStreamWrapper:Zend_View:private] => 
+    [_path:Zend_View_Abstract:private] => Array
+        (
+            [script] => Array
+                (
+                    [0] => /var/www/html/plugins/paypalexpress/system/views/
+                )
+
+            [helper] => Array
+                (
+                )
+
+            [filter] => Array
+                (
+                )
+
+        )
+
+    [_file:Zend_View_Abstract:private] => /var/www/html/plugins/paypalexpress/system/views/paypalbutton.phtml
+    [_helper:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_helperLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filter:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterClass:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoaded:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_filterLoadedDir:Zend_View_Abstract:private] => Array
+        (
+        )
+
+    [_escape:Zend_View_Abstract:private] => htmlspecialchars
+    [_encoding:Zend_View_Abstract:private] => UTF-8
+    [_lfiProtectionOn:Zend_View_Abstract:private] => 1
+    [_loaders:Zend_View_Abstract:private] => Array
+        (
+            [filter] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Filter_] => Array
+                                (
+                                    [0] => Zend/View/Filter/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+            [helper] => Zend_Loader_PluginLoader Object
+                (
+                    [_loadedPluginPaths:protected] => Array
+                        (
+                        )
+
+                    [_loadedPlugins:protected] => Array
+                        (
+                        )
+
+                    [_prefixToPaths:protected] => Array
+                        (
+                            [Zend_View_Helper_] => Array
+                                (
+                                    [0] => Zend/View/Helper/
+                                    [1] => /var/www/html/seotoaster_core/application/views/helpers/
+                                )
+
+                            [ZendX_JQuery_View_Helper_] => Array
+                                (
+                                    [0] => ZendX/JQuery/View/Helper/
+                                )
+
+                        )
+
+                    [_useStaticRegistry:protected] => 
+                )
+
+        )
+
+    [_loaderTypes:Zend_View_Abstract:private] => Array
+        (
+            [0] => filter
+            [1] => helper
+        )
+
+    [_strictVars:Zend_View_Abstract:private] => 
+    [websiteUrl] => http://localhost/
+    [pluginName] => tools_plugins_abstract
+    [secureToken] => 258469dc839ddf22b95f74b366c0f7b5
+    [weightSign] => kg
+    [summary] => Array
+        (
+            [subTotal] => 0
+            [discount] => 0
+            [totalTax] => 0
+            [total] => 0
+            [shippingTax] => 0
+            [discountTax] => 0
+            [subTotalTax] => 0
+            [shipping] => 0
+        )
+
+    [taxIncPrice] => 1
+    [returnAllowed] => 
+)
+
+2017-08-28 10:35:05 -> setProdID 55555555
+2017-08-28 10:35:20 -> setProdID 55555555
+2017-08-28 10:38:29 -> setProdID 55555555
+2017-08-28 10:39:24 -> setProdID 55555555
+2017-08-28 10:40:29 -> setProdID 55555555
+2017-08-28 10:41:15 -> setProdID 55555555
+2017-08-28 10:41:44 -> setProdID 55555555
+2017-08-28 10:42:22 -> setProdID 55555555
+2017-08-28 10:43:09 -> setProdID 55555555
+2017-08-28 10:43:39 -> setProdID 55555555
+2017-08-28 10:46:04 -> setProdID 55555555
+2017-08-28 10:47:28 -> setProdID 55555555
+2017-08-28 10:49:11 -> setProdID 55555555
+2017-08-28 10:51:52 -> setProdID 55555555
+2017-08-28 10:52:59 -> setProdID 55555555
+2017-08-28 10:54:02 -> setProdID 55555555
+2017-08-28 11:03:26 -> setProdID 55555555
+2017-08-28 11:04:57 -> setProdID 55555555
+2017-08-28 11:07:03 -> setProdID 55555555
+2017-08-28 11:07:37 -> setProdID 55555555
+2017-08-28 11:08:06 -> setProdID 55555555
+2017-08-28 11:14:18 -> setProdID 55555555
+2017-08-28 11:15:01 -> setProdID 55555555
+2017-08-28 11:18:26 -> setProdID 55555555
+2017-08-28 11:20:10 -> setProdID 55555555
+2017-08-28 11:21:07 -> setProdID 55555555
+2017-08-28 11:21:07 -> Array
+(
+    [hello] => who are you?
+    [hello2] => dare desu ka
+)
+
+2017-08-28 11:23:07 -> setProdID 55555555
+2017-08-28 11:23:07 -> Array
+(
+    [hello] => who are you?
+    [hello2] => dare desu ka
+)
+
+2017-08-28 11:23:10 -> setProdID 55555555
+2017-08-28 11:23:10 -> Array
+(
+    [hello] => hi
+    [hello2] => konnichiwa
+)
+
+2017-08-28 11:23:14 -> setProdID 55555555
+2017-08-28 11:23:14 -> Array
+(
+    [hello] => who are you?
+    [hello2] => dare desu ka
+)
+
+2017-08-28 11:24:11 -> setProdID 55555555
+2017-08-28 11:24:11 -> Array
+(
+    [hello] => who are you?
+    [hello2] => dare desu ka
+)
+
+2017-08-28 11:24:14 -> setProdID 55555555
+2017-08-28 11:24:14 -> Array
+(
+    [hello] => hi
+    [hello2] => konnichiwa
+)
+
+2017-08-28 11:25:52 -> setProdID 55555555
+2017-08-28 11:25:52 -> Array
+(
+    [hello] => who are you?
+    [hello2] => dare desu ka
+)
+
+2017-08-28 11:25:54 -> setProdID 55555555
+2017-08-28 11:25:54 -> Array
+(
+    [hello] => hi
+    [hello2] => konnichiwa
+)
+
+2017-08-28 11:29:08 -> setProdID 55555555
+2017-08-28 11:29:11 -> setProdID 55555555
+2017-08-28 11:49:07 -> 
+2017-08-28 11:50:07 -> 
+2017-08-28 11:57:09 -> 
+2017-08-28 11:58:46 -> 
+2017-08-28 12:00:20 -> 
+2017-08-28 12:03:51 -> 
+2017-08-28 12:06:03 -> 
+2017-08-28 12:07:48 -> 
+2017-08-28 12:08:24 -> 
+2017-08-28 12:10:06 -> 55555555
+2017-08-28 12:13:06 -> 55555555
+2017-08-28 12:14:15 -> 55555555
+2017-08-28 12:14:35 -> 55555555
+2017-08-28 12:16:00 -> 55555555
+2017-08-28 12:17:12 -> 55555555
+2017-08-28 12:18:12 -> 55555555
+2017-08-28 12:19:30 -> 55555555
+2017-08-28 12:20:28 -> 55555555
+2017-08-28 13:02:01 -> 0.01
+2017-08-28 13:05:08 -> 0.01
+2017-08-28 13:05:08 -> 0.36019
+2017-08-28 13:06:41 -> 0.02
+2017-08-28 13:06:41 -> 0.37038
+2017-08-28 13:06:50 -> 100
+2017-08-28 13:06:50 -> 102.25
+2017-08-28 13:34:41 -> 102.25
+2017-08-28 13:34:53 -> 204.15
+2017-08-28 13:35:31 -> 102.25
+2017-08-28 13:40:29 -> 102.25
+2017-08-28 13:40:51 -> 102.25
+2017-08-28 13:44:39 -> 102.25
+2017-08-28 13:45:35 -> 102.25
+2017-08-28 13:47:17 -> 102.25
+2017-08-28 13:48:41 -> 102.25
+2017-08-28 13:48:49 -> 5.445
+2017-08-28 13:49:47 -> 10.54
+2017-08-28 13:50:13 -> 5.445
+2017-08-28 13:50:55 -> 5.445
+2017-08-28 13:54:04 -> 5.4
+2017-08-28 13:54:29 -> 5
+2017-08-28 13:54:59 -> 5.45
+2017-08-28 13:56:27 -> 5.45
+2017-08-28 14:03:52 -> 5.45
+2017-08-28 14:14:47 -> 5.45
+2017-08-28 14:18:00 -> 5.45
+2017-08-28 14:22:26 -> 5.45
+2017-08-28 14:22:39 -> 1.37
+2017-08-28 14:22:54 -> 5.45
+2017-08-28 14:23:00 -> 1.37
+2017-08-28 14:27:04 -> 1.37
+2017-08-28 14:33:49 -> 1.37
+2017-08-28 14:34:59 -> 1.37
+2017-08-28 14:40:50 -> 1.37
+2017-08-28 14:44:16 -> 1.37
+2017-08-28 14:55:21 -> 1.37
+2017-08-28 15:27:08 -> 1.37
+2017-08-28 15:27:42 -> 
+2017-08-28 15:41:17 -> 
+2017-08-28 15:41:28 -> 1.37
+2017-08-28 15:41:52 -> 
+2017-08-28 15:44:10 -> 1.37
+2017-08-28 15:46:06 -> 1.37
+2017-08-28 15:47:20 -> 
+2017-08-28 15:47:20 -> 
+2017-08-28 15:48:27 -> 1.37
+2017-08-28 15:48:55 -> 
+2017-08-28 15:51:19 -> 1.37
+2017-08-28 15:51:43 -> 
+2017-08-28 15:51:43 -> 
+2017-08-28 16:03:27 -> 
+2017-08-28 16:03:27 -> 
+2017-08-28 16:08:38 -> 1.37
+2017-08-28 16:09:22 -> 
+2017-08-28 16:09:22 -> 
+2017-08-28 16:11:04 -> 
+2017-08-28 16:11:04 -> 
+2017-08-28 16:11:13 -> 1.37
+2017-08-28 16:11:40 -> Array
+(
+    [firstname] => Hans
+    [lastname] => Meier
+    [company] => 
+    [email] => thori88-buyer2@web.de
+    [address1] => Musterstraße 55
+    [address2] => 
+    [country] => DE
+    [city] => Strausberg
+    [state] => 
+    [zip] => 15344
+    [phone] => 
+    [notes] => 
+    [mobilecountrycode] => DE
+    [mobile] => 
+)
+
+2017-08-28 16:11:40 -> 
+2017-08-28 16:11:40 -> 
+2017-08-28 16:25:42 -> 1.37
+2017-08-28 16:26:26 -> 1.37
+2017-08-28 16:27:05 -> 1.37
+2017-08-28 16:31:05 -> 1.37
+2017-08-28 16:32:59 -> 1.37
+2017-08-28 16:33:29 -> 1.37
+2017-08-28 16:35:15 -> 1.37
+2017-08-28 16:39:41 -> 1.37
+2017-08-28 16:43:57 -> 1.37
+2017-08-28 16:44:12 -> 1.37
+2017-08-28 16:44:43 -> 1.37
+2017-08-28 16:48:35 -> 1.37
+2017-08-28 16:49:25 -> 1.37
+2017-08-28 16:49:46 -> 1.37
+2017-08-28 16:56:52 -> 1.37
+2017-08-28 17:01:54 -> 1.37
+2017-08-28 17:02:09 -> 1.37
+2017-08-28 17:02:36 -> Array
+(
+    [firstname] => Hans
+    [lastname] => Meier
+    [company] => 
+    [email] => thori88-buyer2@web.de
+    [address1] => Musterstraße 55
+    [address2] => 
+    [country] => DE
+    [city] => Strausberg
+    [state] => 
+    [zip] => 15344
+    [phone] => 
+    [notes] => 
+    [mobilecountrycode] => DE
+    [mobile] => 
+)
+
+2017-08-28 17:02:36 -> 
+2017-08-28 17:03:36 -> 
+2017-08-28 17:03:49 -> 1.37
+2017-08-28 17:04:24 -> 1.37
+2017-08-28 17:05:19 -> 1.37
+2017-08-29 07:57:41 -> 1.37
+2017-08-29 07:58:24 -> Array
+(
+    [firstname] => Hans
+    [lastname] => Meier
+    [company] => 
+    [email] => thori88-buyer2@web.de
+    [address1] => Musterstraße 55
+    [address2] => 
+    [country] => DE
+    [city] => Strausberg
+    [state] => 
+    [zip] => 15344
+    [phone] => 
+    [notes] => 
+    [mobilecountrycode] => DE
+    [mobile] => 
+)
+
+2017-08-29 07:58:24 -> 
+2017-08-29 07:59:23 -> 
+2017-08-29 07:59:59 -> 1.37
+2017-08-29 08:01:37 -> 1.37
+2017-08-29 08:44:55 -> 1.37
+2017-08-29 08:45:27 -> 
+2017-08-29 08:47:51 -> 1.37
+2017-08-29 08:48:06 -> 1.37
+2017-08-29 08:53:05 -> 1.37
+2017-08-29 08:56:09 -> 1.37
+2017-08-29 08:56:25 -> 1.37
+2017-08-29 08:57:02 -> 1.37
+2017-08-29 08:59:36 -> 1.37
+2017-08-29 09:04:07 -> 1.37
+2017-08-29 09:05:40 -> register
+2017-08-29 09:05:40 -> 12345678
+2017-08-29 09:05:46 -> register
+2017-08-29 09:05:46 -> 12345678
+2017-08-29 09:07:32 -> register
+2017-08-29 09:07:32 -> 12345678
+2017-08-29 09:07:32 -> 
+2017-08-29 09:08:15 -> 1.37
+2017-08-29 09:08:49 -> register
+2017-08-29 09:08:49 -> 12345678
+2017-08-29 09:08:49 -> 
+2017-08-29 09:11:51 -> 1.37
+2017-08-29 09:12:25 -> register
+2017-08-29 09:12:25 -> 12345678
+2017-08-29 09:12:25 -> 
+2017-08-29 09:13:27 -> 1.37
+2017-08-29 09:13:50 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:19:53 -> register
+2017-08-29 09:19:53 -> 12345678
+2017-08-29 09:19:53 -> 
+2017-08-29 09:20:04 -> 1.37
+2017-08-29 09:20:42 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:21:08 -> register
+2017-08-29 09:21:08 -> 12345678
+2017-08-29 09:21:08 -> 
+2017-08-29 09:23:38 -> 1.37
+2017-08-29 09:24:00 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:25:27 -> 1.37
+2017-08-29 09:25:48 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:25:48 -> register
+2017-08-29 09:26:41 -> 1.37
+2017-08-29 09:27:23 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:37:10 -> 1.37
+2017-08-29 09:41:46 -> 1.37
+2017-08-29 09:42:16 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:42:22 -> register
+2017-08-29 09:42:22 -> 12345678
+2017-08-29 09:42:22 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => 
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => 
+    [_password:protected] => 
+    [_roleId:protected] => guest
+    [_fullName:protected] => 
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 
+    [_ipaddress:protected] => 
+    [_referer:protected] => http://localhost/registration.html
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => Array
+        (
+        )
+
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:49:43 -> 1.37
+2017-08-29 09:50:05 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:53:54 -> 1.37
+2017-08-29 09:54:16 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 09:59:02 -> 1.37
+2017-08-29 09:59:34 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:01:39 -> 1.37
+2017-08-29 10:02:02 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:02:12 -> register
+2017-08-29 10:02:12 -> 12345678
+2017-08-29 10:02:12 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:02:14 -> register
+2017-08-29 10:02:14 -> 12345678
+2017-08-29 10:02:14 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:02:16 -> register
+2017-08-29 10:02:16 -> 12345678
+2017-08-29 10:02:16 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:02:16 -> register
+2017-08-29 10:02:16 -> 12345678
+2017-08-29 10:02:16 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:35:53 -> 1.37
+2017-08-29 10:36:35 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:36:49 -> register
+2017-08-29 10:36:49 -> 12345678
+2017-08-29 10:36:49 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:36:49 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:45:22 -> register
+2017-08-29 10:45:22 -> 12345678
+2017-08-29 10:45:22 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:45:22 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:45:22 -> 0
+2017-08-29 10:54:45 -> 1.37
+2017-08-29 10:55:41 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:55:51 -> register
+2017-08-29 10:55:51 -> 12345678
+2017-08-29 10:55:51 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 10:55:51 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:05:27 -> 1.37
+2017-08-29 11:05:51 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:06:03 -> register
+2017-08-29 11:06:03 -> 12345678
+2017-08-29 11:06:03 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:06:03 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:07:16 -> register
+2017-08-29 11:07:16 -> 12345678
+2017-08-29 11:07:16 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:07:16 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:08:55 -> register
+2017-08-29 11:08:55 -> 12345678
+2017-08-29 11:08:55 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:08:55 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:09:14 -> 1.37
+2017-08-29 11:09:36 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:09:45 -> register
+2017-08-29 11:09:45 -> 12345678
+2017-08-29 11:09:45 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:09:45 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:09:47 -> register
+2017-08-29 11:09:47 -> 12345678
+2017-08-29 11:09:47 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:09:47 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:10:13 -> register
+2017-08-29 11:10:13 -> 12345678
+2017-08-29 11:10:13 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 9d127c247dda94c06332903b812a26e4
+    [_roleId:protected] => customer
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:10:13 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 25d55ad283aa400af464c76d713c07ad
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:10:13 -> 1
+2017-08-29 11:10:37 -> 1.37
+2017-08-29 11:11:04 -> 1.37
+2017-08-29 11:13:09 -> 1.37
+2017-08-29 11:13:42 -> Models_Model_Customer Object
+(
+    [_addresses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [id] => a7842fd67218aa2a89634f6be8280854
+                    [user_id] => 53
+                    [address_type] => billing
+                    [firstname] => Hans
+                    [lastname] => Meier
+                    [company] => 
+                    [email] => thori88-buyer2@web.de
+                    [address1] => Musterstraße 55
+                    [address2] => 
+                    [country] => DE
+                    [city] => Strausberg
+                    [state] => 
+                    [zip] => 15344
+                    [phone] => 
+                    [mobile] => 
+                    [mobilecountrycode] => DE
+                )
+
+        )
+
+    [_default_billing_address_id:protected] => 
+    [_default_shipping_address_id:protected] => 
+    [_group_id:protected] => 
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 550e1bafe077ff0b0b67f4e32f29d751
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:13:49 -> register
+2017-08-29 11:13:49 -> 12345678
+2017-08-29 11:13:49 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 550e1bafe077ff0b0b67f4e32f29d751
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:13:49 -> Application_Model_Models_User Object
+(
+    [_email:protected] => thori88-buyer2@web.de
+    [_password:protected] => 12345678
+    [_roleId:protected] => member
+    [_fullName:protected] => Hans Meier
+    [_lastLogin:protected] => 
+    [_regDate:protected] => 2017-08-23 12:23:48
+    [_ipaddress:protected] => ::1
+    [_referer:protected] => 
+    [_gplusProfile:protected] => 
+    [_attributes:protected] => 
+    [_mobilePhone:protected] => 
+    [_notes:protected] => 
+    [_id:protected] => 53
+    [_observers:protected] => Array
+        (
+        )
+
+)
+
+2017-08-29 11:13:49 -> 1
+2017-08-29 11:13:58 -> 1.37
+2017-08-29 11:14:25 -> 1.37
+2017-08-29 11:15:42 -> 1.37
+2017-08-29 11:43:17 -> 1.37
+2017-08-29 11:43:29 -> 1.37
+2017-08-29 11:55:55 -> 2.39
+2017-08-29 11:57:07 -> 2.39
+2017-08-29 11:57:32 -> 1.37
+2017-08-29 11:59:36 -> 1.37
+2017-08-29 12:03:34 -> 1.37
+2017-08-29 12:14:29 -> 1.37
+2017-08-29 12:22:03 -> 1.37
+2017-08-29 12:37:29 -> 1.37
+2017-08-29 12:40:15 -> 1.37
+2017-08-29 12:42:06 -> 1.37
+2017-08-29 12:43:04 -> 1.37
+2017-08-29 12:48:45 -> 1.37
+2017-08-29 12:50:05 -> 1.37
+2017-08-29 12:53:37 -> 1.37
+2017-08-29 12:54:27 -> 1.37
+2017-08-29 13:37:16 -> 3160.27
+2017-08-29 13:38:37 -> 3.41
+2017-08-29 14:59:11 -> 1.37
+2017-08-29 15:19:50 -> 1.37
+2017-08-29 15:38:47 -> 1.37
+2017-08-29 15:38:56 -> 1.37
+2017-08-29 15:39:29 -> 1.37
+2017-08-29 15:41:57 -> 1.37
+2017-08-29 15:59:36 -> 1.37
+2017-08-29 15:59:41 -> 1.37
+2017-08-29 16:09:12 -> 1.37
+2017-08-29 16:12:23 -> 1.37
+2017-08-29 16:12:29 -> 5.45
+2017-08-29 16:18:14 -> 0.35
+2017-08-29 16:20:14 -> 1.37
+2017-08-29 16:28:15 -> 1.37
+2017-08-29 16:28:31 -> 1.37
+2017-08-29 16:34:09 -> 1.37
+2017-08-29 16:56:11 -> 1.37
+2017-08-29 16:56:59 -> 
+2017-08-29 16:57:01 -> 
+2017-08-29 16:57:06 -> 
+2017-08-30 08:01:33 -> 1.37
+2017-08-30 08:15:48 -> 1.37
+2017-08-30 08:22:05 -> 1.37
+2017-08-30 08:25:33 -> 1.37
+2017-08-30 08:28:27 -> 1.37
+2017-08-30 08:35:08 -> 1.37
+2017-08-30 08:38:35 -> 1.37
+2017-08-30 08:50:34 -> 1.37
+2017-08-30 08:53:44 -> 1.37
+2017-08-30 09:05:25 -> 1.37
+2017-08-30 09:10:31 -> 1.37
+2017-08-30 09:11:58 -> 
+2017-08-30 09:13:51 -> email
+2017-08-30 09:18:05 -> 1.37
+2017-08-30 09:18:52 -> thori88-buyer@web.de
+2017-08-30 09:22:25 -> 4.43
+2017-08-30 09:23:01 -> 4.43
+2017-08-30 09:23:19 -> 4.43
+2017-08-30 09:31:35 -> 4.43
+2017-08-30 09:31:56 -> 4.43
+2017-08-30 09:32:14 -> 4.43
+2017-08-30 09:32:31 -> 4.43
+2017-08-30 09:32:44 -> 4.43
+2017-08-30 09:32:58 -> 4.43
+2017-08-30 09:34:16 -> 1.37
+2017-08-30 09:34:35 -> 1.37
+2017-08-30 09:34:49 -> 1.37
+2017-08-30 09:35:23 -> 1.37
+2017-08-30 09:40:07 -> 4.43
+2017-08-30 09:40:49 -> thori88-buyer2@web.de
+2017-08-30 09:41:42 -> 1.37
+2017-08-30 09:41:57 -> 1.37
+2017-08-30 09:44:58 -> 1.37
+2017-08-30 09:45:46 -> 
+2017-08-30 09:45:50 -> 
+2017-08-30 09:45:51 -> 
+2017-08-30 09:48:19 -> 4.43
+2017-08-30 09:48:53 -> thori88-buyer2@web.de
+2017-08-30 09:49:04 -> 1.37
+2017-08-30 09:49:20 -> 1.37
+2017-08-30 09:49:39 -> 1.37
+2017-08-30 09:50:00 -> 1.37
+2017-08-30 09:53:23 -> 1.37
+2017-08-30 09:54:02 -> 2.39
+2017-08-30 09:54:46 -> thori88-buyer2@web.de
+2017-08-30 09:54:50 -> 1.37
+2017-08-30 09:55:05 -> 1.37
+2017-08-30 09:55:10 -> 1.37
+2017-08-30 09:55:38 -> 1.37
+2017-08-30 10:52:09 -> 0.35
+2017-08-30 10:52:32 -> 0.35
+2017-08-30 11:26:08 -> 1
+2017-08-30 11:26:08 -> 0
+2017-08-30 11:26:23 -> 1
+2017-08-30 11:26:23 -> 0
+2017-08-30 11:26:59 -> 1
+2017-08-30 11:26:59 -> 0
+2017-08-30 11:28:21 -> 1
+2017-08-30 11:28:21 -> 1
+2017-08-30 11:28:25 -> 1
+2017-08-30 11:28:25 -> 0
+2017-08-30 11:59:10 -> 0
+2017-08-30 11:59:19 -> 1
+2017-08-30 12:00:50 -> 1
+2017-08-30 12:01:11 -> 2.39
+2017-08-30 12:04:06 -> 4.43
+2017-08-30 12:05:08 -> thori88-buyer@web.de
+2017-08-30 12:05:16 -> 1.37
+2017-08-30 12:05:51 -> 0.35
+2017-08-30 12:05:57 -> 1.37
+2017-08-30 12:06:15 -> 1.37
+2017-08-30 12:11:07 -> 1
+2017-08-30 12:11:57 -> thori88-buyer@web.de
+2017-08-30 12:12:02 -> 1
+2017-08-30 12:12:17 -> 1
+2017-08-30 12:12:27 -> 1
+2017-08-30 12:13:08 -> 1
+2017-08-30 12:39:13 -> 2
+2017-08-30 12:40:43 -> thori88-buyer2@web.de
+2017-08-30 12:42:53 -> 1
+2017-08-30 12:52:30 -> 1.019+0.35
+2017-08-30 13:57:34 -> 0
+2017-08-30 13:58:33 -> 1.019+0.35
+2017-08-30 14:06:31 -> 1.369
+2017-08-30 14:06:31 -> 1.37
+2017-08-30 14:10:56 -> 1.019
+2017-08-30 14:10:56 -> 1.02
+2017-08-30 14:11:02 -> 2.038
+2017-08-30 14:11:02 -> 2.04
+2017-08-30 14:11:39 -> 6.114
+2017-08-30 14:11:39 -> 6.11
+2017-08-30 14:11:44 -> 5.095
+2017-08-30 14:11:44 -> 5.1
+2017-08-30 14:13:44 -> 5.445
+2017-08-30 14:13:44 -> 5.45
+2017-08-30 14:14:35 -> 4.426
+2017-08-30 14:14:35 -> 4.43
+2017-08-30 14:15:47 -> 4.426
+2017-08-30 14:15:47 -> 4.43
+2017-08-30 14:18:18 -> 4.426
+2017-08-30 14:18:18 -> 4.43
+2017-08-30 14:18:33 -> 8.502
+2017-08-30 14:18:33 -> 8.5
+2017-08-30 14:18:56 -> 8.502
+2017-08-30 14:18:56 -> 8.5
+2017-08-30 14:19:21 -> 8.502
+2017-08-30 14:19:21 -> 8.5
+2017-08-30 14:22:45 -> 1.019
+2017-08-30 14:22:49 -> 4.076
+2017-08-30 14:22:49 -> 4.08
+2017-08-30 14:26:24 -> 1.019+0.35
+2017-08-30 14:30:14 -> *1.019+0.35
+2017-08-30 14:30:35 -> 4.426
+2017-08-30 14:30:35 -> 4.43
+2017-08-30 14:30:55 -> 5.445
+2017-08-30 14:30:55 -> 5.45
+2017-08-30 14:31:33 -> 5.445
+2017-08-30 14:31:47 -> 4.426
+2017-08-30 14:31:47 -> 4.43
+2017-08-30 14:58:57 -> 1.369
+2017-08-30 14:58:57 -> 1.37
+2017-08-30 15:00:07 -> 1.369
+2017-08-30 15:06:10 -> 1.369
+2017-08-30 15:06:10 -> 1.37
+2017-08-30 15:07:02 -> 1.369
+2017-08-30 15:07:14 -> info@autoprofis24.de
+2017-08-30 15:39:20 -> 4.426
+2017-08-30 15:39:20 -> 4.43
+2017-08-30 15:39:43 -> 4.426
+2017-08-30 15:39:43 -> 4.43
+2017-08-31 09:58:51 -> *1.019+0.35
+2017-08-31 10:00:59 -> 0.35
+2017-08-31 10:00:59 -> 0.35

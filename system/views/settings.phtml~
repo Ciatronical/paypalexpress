@@ -1,0 +1,79 @@
+<div class="seotoaster container">
+
+ <?php
+$this->headTitle($this->translate('Paypal Express Settings'));
+$this->placeholder('headerContent')->set('Paypal Express Settings');
+?>
+
+
+   	<form name="paypalsettings" class="pluginform content-auto" method="" action="">
+		<label class="grid_12 text-center text-bold pointer pt5px">
+            <?php echo $this->translate('Use SandBox');?>:
+            <input type="checkbox" name="sandbox" <?php if($this->useSandBox == 1) echo "checked";?> />
+        </label>
+        
+        <label class="grid_12 text-center text-bold pointer pt5px">
+            <?php echo $this->translate('Add PaypalFee');?>:
+            <input type="checkbox" name="usePaypalfee" <?php if($this->usePaypalfee == 1) echo "checked";?> />
+        </label>
+        
+        <fieldset class="background grid_12 mt20px">
+            <p>
+                <label><?php echo $this->translate('Client Production ID');?>: </label>
+                <input type="text" name="clientProductionID" value="<?php echo $this->prodID; ?>" />
+            </p>
+            <p>
+                <label><?php echo $this->translate('Client Sandbox ID');?>: </label>
+                <input type="text" name="clientSandboxID" value="<?php echo $this->sandID; ?>" />
+            </p>
+            
+
+        </fieldset>
+       
+        <button class="btn saveButton ticon-save mr-grid" type="submit" name="savePaypalSettings"><?php echo $this->translator->translate('Save');?></button>
+	</form>
+
+
+</div>
+<script>
+$(document).ready(function(){
+    
+    $('.saveButton').on("click", function() {
+    	//alert ('<?php echo $this->websiteUrl; ?>plugin/paypalexpress/run/settings');
+        showSpinner();
+       
+       var useSandBox = 0;
+       if($("input[name=sandbox]").prop("checked")){
+           useSandBox = 1;
+       }
+       
+       var usePaypalfee = 0;
+       if($("input[name=usePaypalfee]").prop("checked")){
+           usePaypalfee = 1;
+       }
+
+        $.ajax({
+            type: "POST",
+            url: '<?php echo $this->websiteUrl; ?>plugin/paypalexpress/run/settings/',
+            dataType: "json",
+            data: {
+                prodID:$("[name=clientProductionID]").val(),
+                sandID:$("[name=clientSandboxID]").val(),
+                useSandBox: useSandBox,
+                usePaypalfee: usePaypalfee
+            }
+        }).done(function(response) {
+            hideSpinner();
+            if(response.error == 1){
+                smoke.alert(response.responseText,{'classname':'errors'});
+            }else{
+                smoke.signal('<?php echo $this->translator->translate('Saved');?>');
+            }
+        }).fail(function() {
+            hideSpinner();
+            console.log('error');
+        });
+        return false;
+    });
+});
+</script>

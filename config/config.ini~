@@ -1,0 +1,10 @@
+[cpanel]
+
+[superadmin : cpanel]
+title = "Paypal"
+items[] = "<a href='javascript:;' class='tpopup' data-pwidth="480" data-pheight="421" data-url='{url}plugin/paypalexpress/run/settings/'>Express Config</a>"
+
+[admin : cpanel]
+title = "Paypal"
+items[] = "<a href='javascript:;' class='tpopup' data-pwidth="480" data-pheight="421" data-url='{url}plugin/paypalexpress/run/settings/'>Express Config</a>"
+

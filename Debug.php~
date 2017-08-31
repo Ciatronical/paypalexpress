@@ -1,0 +1,14 @@
+<?php
+
+
+function printArray( $array ){
+    echo '<pre>';
+    print_r( $array );
+    echo '</pre>';
+}
+
+function writeLog( $log ){
+        file_put_contents( __DIR__.'log.log', date("Y-m-d H:i:s -> " ).print_r( $log, TRUE )."\n", FILE_APPEND );
+    }
+
+?>

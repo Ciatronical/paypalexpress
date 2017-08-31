@@ -1,0 +1,66 @@
+<div>
+
+<span><?php echo $this->translate('Do you want to register?'); ?></span>
+
+
+   	<form name="register" class="pluginform" method="" action="">
+		
+        	<p>
+                
+                <input id="email" type="text" name="email" value=""  style="display: none" />
+            </p>
+            
+                       
+            <p>
+                <label><?php echo $this->translate('Password');?>: </label>
+                <input type="password" name="password"  />
+            </p>
+            
+
+        
+       
+        <button class="btn saveButton ticon-save mr-grid" type="submit" name="savePW"><?php echo $this->translate('Register');?></button>
+	</form>
+
+
+</div>
+<script>
+$(document).ready(function(){
+    
+        
+     var foundin = $('span:contains("Email:")');
+	
+	console.log(foundin.text());    
+	var email=foundin.text().replace("Email: ","");
+	console.log(email);  
+    
+    $('.saveButton').on("click", function() {
+    	
+       
+       document.getElementById('email').value = email;
+       
+       
+        $.ajax({
+            type: "POST",
+            url: '<?php echo $this->websiteUrl; ?>plugin/paypalexpress/run/register/',
+            dataType: "json",
+            data: {
+               	email:$("[name=email]").val(),
+               	password:$("[name=password]").val()
+                
+            }
+        }).done(function(response) {
+            
+            if(response.error == 1){
+                smoke.alert(response.responseText,{'classname':'errors'});
+            }else{
+                smoke.signal('<?php echo ('Saved');?>');
+            }
+        }).fail(function() {
+            
+            console.log('error');
+        });
+        return false;
+    });
+});
+</script>

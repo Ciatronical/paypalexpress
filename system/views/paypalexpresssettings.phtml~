@@ -1,0 +1,7 @@
+<div class="paypalexpress">
+<h1>PaypalExpress</h1>
+
+<p>PayPal Client IDs</p>
+<a>Production ID: </a><input id="" type="text"/>
+
+</div>

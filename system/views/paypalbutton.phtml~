@@ -1,0 +1,132 @@
+
+	
+<!-- Paypal Express button script -->	
+
+<div id="paypal-button"></div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+
+
+<div id="paypal-button-container"></div>
+
+    <script>
+  
+       <?php
+ 
+ 		 $totalPrice=$this->summary['total']+$this->paypalfee; //Gesammtpreis mit Paypalgebühren für die Zahlung 
+ 		 writeLog($totalPrice);
+         //$price=$this->summary['total']; //Gesammtpreis für die Zahlung
+        
+         
+         $prodID=$this->prodID;
+         $sandID=$this->sandID;
+         
+         $sandbox='sandbox';
+         $production='production';
+         
+         
+         
+        
+         
+         if ($this->useSandBox) {
+         	
+         	echo "var useSandBox='$sandbox';";
+         	
+         }else {
+         	
+         	echo "var useSandBox='$production';";
+         	
+         }
+         
+       
+         
+        	echo"var prodID='$prodID';";
+        	echo"var sandID='$sandID';";
+			echo"var totalPrice='$totalPrice';";
+			
+		?>
+
+
+		
+
+
+        paypal.Button.render({
+        
+        	
+
+            env: useSandBox, // sandbox | production
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox:    sandID,
+                production: prodID
+            },
+
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+
+            // payment() is called when the button is clicked
+            payment: function(data, actions) {
+
+				
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: { total: totalPrice, currency: 'EUR' }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function(data, actions) {
+            
+            
+            
+          
+            return actions.payment.get().then(function(paymentDetails) {
+            
+          
+            
+
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function() {
+              
+             
+             //Paypal Kundendaten 
+             	 var firstname=paymentDetails.payer.payer_info.first_name;
+				 var lastname=paymentDetails.payer.payer_info.last_name;
+				 var email=paymentDetails.payer.payer_info.email;
+				 
+				 var street=paymentDetails.payer.payer_info.shipping_address.line1;
+				 var city=paymentDetails.payer.payer_info.shipping_address.city;
+				 var postalCode=paymentDetails.payer.payer_info.shipping_address.postal_code;
+				 
+				 
+				 
+  
+  	
+					//console.log(paymentDetails.payer.payer_info.shipping_address);
+                    window.alert("Zahlung erfolgreich");
+                    
+                 
+                   //Senden der Kundendaten an den Server(siehe Cart.php ab Zeile 1504)
+                  window.location = "/checkout.html?firstname="+firstname+"&lastname="+lastname+"&email="+email+"&street="+street+"&city="+city+"&postalCode="+postalCode;
+                });
+           });
+           
+            }
+
+        }, '#paypal-button-container');
+
+    </script>
+	
+ 
+<label style="font-size: 70%">Es fallen zusätzliche Gebühren an </label>	
+</div>
+
