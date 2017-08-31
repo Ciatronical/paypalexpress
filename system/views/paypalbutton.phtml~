@@ -116,7 +116,7 @@
                     
                  
                    //Senden der Kundendaten an den Server(siehe Cart.php ab Zeile 1504)
-                  window.location = "/checkout.html?firstname="+firstname+"&lastname="+lastname+"&email="+email+"&street="+street+"&city="+city+"&postalCode="+postalCode;
+                  window.location = "checkout.html?firstname="+firstname+"&lastname="+lastname+"&email="+email+"&street="+street+"&city="+city+"&postalCode="+postalCode;
                 });
            });
            
