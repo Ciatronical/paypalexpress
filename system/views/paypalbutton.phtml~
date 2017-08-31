@@ -12,11 +12,54 @@
 
     <script>
   
+  
+  function getPrice(){
+
+
+		$.ajax({
+            type: "POST",
+            url: '<?php echo $this->websiteUrl; ?>plugin/paypalexpress/run/updatePrice/',
+            dataType: "json",
+            async:false ,
+            data: {
+               
+            }
+        }).done(function(response) {
+            
+            
+            
+            if(response.error == 1){
+             
+            }else{
+            
+            
+            totalPrice=response.responseText;
+            
+            
+			return totalPrice;            
+            
+            }
+        }).fail(function() {
+            
+            console.log('error');
+            
+            
+        });
+
+return totalPrice; 
+
+}
+  
+  
+  
+  
+  
+  
+  
        <?php
  
- 		 $totalPrice=$this->summary['total']+$this->paypalfee; //Gesammtpreis mit Paypalgebühren für die Zahlung 
- 		 writeLog($totalPrice);
-         //$price=$this->summary['total']; //Gesammtpreis für die Zahlung
+ 		 $totalPrice=$this->paypalfee; //Gesammtpreis mit Paypalgebühren für die Zahlung 
+ 		 
         
          
          $prodID=$this->prodID;
@@ -70,13 +113,17 @@
             // payment() is called when the button is clicked
             payment: function(data, actions) {
 
+
+		console.log(getPrice());
+				
+				
 				
                 // Make a call to the REST api to create the payment
                 return actions.payment.create({
                     payment: {
                         transactions: [
                             {
-                                amount: { total: totalPrice, currency: 'EUR' }
+                                amount: { total: getPrice(), currency: 'EUR' }
                             }
                         ]
                     }

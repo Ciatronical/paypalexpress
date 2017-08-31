@@ -138,6 +138,9 @@ return $this->_layout->content = $this->_view->render('registerafterpayment.phtm
 
 public function calculatePaypalFee($fee) {
 	
+	
+	
+	
 	$summary = $this->_cartStorage->calculate();
 	$totalPrice = $summary['total'];
 	
@@ -149,8 +152,25 @@ public function calculatePaypalFee($fee) {
 	$paypalfee = $totalPrice-$summary['total'];
 	//writeLog($totalPrice);
 	
-	return $paypalfee;
+	return $totalPrice;
 }
+
+
+public function updatePriceAction(){
+
+$paypalConfigMapper = Paypalexpress_Models_Mapper_PaypalExpressSettingsMapper::getInstance();
+			    $paypalSettings = $paypalConfigMapper->selectSettings();
+				$paypalfee = $paypalSettings[0]->getPaypalfee();
+
+if($this->_request->isPost()){ 
+
+$this->_responseHelper->success($this->calculatePaypalFee($paypalfee));
+}else {
+
+
+}
+}
+
 
 
    
