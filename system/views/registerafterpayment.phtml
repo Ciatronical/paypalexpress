@@ -28,11 +28,16 @@
 $(document).ready(function(){
     
         
-     var foundin = $('span:contains("Email:")');
+    var foundin = $('span:contains("Email:")');
 	
-	console.log(foundin.text());    
+	
+	 
 	var email=foundin.text().replace("Email: ","");
-	console.log(email);  
+	if(email=="")
+	{
+		foundin=$('span:contains("E-mail:")');
+		email=foundin.text().replace("E-mail: ","");
+	}
     
     $('.saveButton').on("click", function() {
     	
