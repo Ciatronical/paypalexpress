@@ -61,7 +61,7 @@ public function settingsAction() {
 			  $useSandBox = $this->_request->getParam('useSandBox');
 			  $usePaypalfee = $this->_request->getParam('usePaypalfee');
 			  $paypalfee = $this->_request->getParam('paypalfee');
-			  writeLog($paypalfee);
+			  //writeLog($paypalfee);
 			  $paypalModelConfig->setProdID($prodID);
 			  $paypalModelConfig->setSandID($sandID);
 			  $paypalModelConfig->setUseSandbox($useSandBox);
@@ -180,9 +180,9 @@ public function _makeOptionPaypalbutton() {
      	
      	//writeLog($this->calculatePaypalFee());
      	
-     	//Integration der Paypalkundendaten in die Datenbank 
-		//wird nachdem Zahlungsvorgang ausgeführt	
-			if(isset($_GET["firstname"])){		//überprüft ob ein Wert in der Url vorhanden ist
+     	// Paypalcustomerdata is saved in database 
+		//is executed after the payment	
+			if(isset($_GET["firstname"])){		//checks if the url data is available
 					
 					//Kundendaten
 				$firstname=$_GET["firstname"];
@@ -196,11 +196,11 @@ public function _makeOptionPaypalbutton() {
 				$postalCode=$_GET["postalCode"];				
 				
 				
-				$cart = Tools_ShoppingCart::getInstance();// die aktuelle Bestellung
+				$cart = Tools_ShoppingCart::getInstance();// the actual order 
 				
 				
 				
-				//Vorbereiten des KundenArray
+				//preperement of the customer array
 				$customerData = array(
 	   			 "firstname"    => $firstname,
 	   			 "lastname"  => $lastname,
@@ -208,20 +208,20 @@ public function _makeOptionPaypalbutton() {
 	   			 "mobilecountrycode" => "DE",
 	   			 "mobile" => "",
 					);				
-				$addressType = Models_Model_Customer::ADDRESS_TYPE_SHIPPING; //Adresstyp
+				$addressType = Models_Model_Customer::ADDRESS_TYPE_SHIPPING; //adresstype
 				
 			
-				$this->_checkoutSession->initialCustomerInfo = $customerData;// die aktuelle Session
-				$customer = Shopping::processCustomer($customerData);	//übertragen des Kundenarrays in die Datenbank
+				$this->_checkoutSession->initialCustomerInfo = $customerData;// the actual session
+				$customer = Shopping::processCustomer($customerData);	//customer array is saved in database
 				
 							
 					
 				if ($customer->getId()) {
                     $customer->setAttribute('mobilecountrycode', $customerData['mobilecountrycode']);
-                    Application_Model_Mappers_UserMapper::getInstance()->saveUserAttributes($customer); //Speichert die Kundendaten
+                    Application_Model_Mappers_UserMapper::getInstance()->saveUserAttributes($customer); //customer data is saved
             
             	$address =array("firstname" => $firstname, "lastname" => $lastname,"company"=>"", "email"=>$email, "address1"=>$street,"address2"=>"","country"=>"DE","city"=>$city, "state"=>"", "zip"=>$postalCode, "phone"=>"","notes"=>"","mobilecountrycode"=>"DE", "mobile"=>"");
-				$addressId = Models_Mapper_CustomerMapper::getInstance()->addAddress($customer, $address, $addressType); //Speichern der KundenAdresse in die Datenbank
+				$addressId = Models_Mapper_CustomerMapper::getInstance()->addAddress($customer, $address, $addressType); //customer address is saved
 				
 				$cart->setBillingAddressKey($addressId);
 				$cart->setShippingAddressKey($addressId);
@@ -237,19 +237,19 @@ public function _makeOptionPaypalbutton() {
 				$summary = $this->_cartStorage->calculate();
 					
 				$paypalfee = $paypalSettings[0]->getPaypalfee();
-				$product = $this->_productMapper->find(999999);//Sucht den PaypalExpress Atikel für die Darstellung der Gebühr
-				$product->setPrice($this->calculatePaypalFee($paypalfee)-$summary['total']);//Berechnet die Gebühr			
+				$product = $this->_productMapper->find(999999);
+				$product->setPrice($this->calculatePaypalFee($paypalfee)-$summary['total']);		
 								
-				$this->_cartStorage->add($product, null, 1);//fügt den Artikel zur Bestellung hinzu
+				$this->_cartStorage->add($product, null, 1);
 				
 				}				
 				
 				
 				$cart->setCustomerId($customer->getId())->calculate(true);
-				$cart->save()->saveCartSession($customer); //Speichern der Bestellung mit Kundendaten
+				$cart->save()->saveCartSession($customer); 
 				
 				
-				//Setzt den Status der Bestellung auf Bezahlt
+				
 				$orderId=$cart->getCartId();	
 				
 				$orderModel = Models_Mapper_CartSessionMapper::getInstance()->find($orderId);
@@ -325,7 +325,7 @@ public function _makeOptionPaypalbutton() {
 		return $this->_layout->content = $this->_view->render('paypalbutton.phtml');
        //echo $this->_layout->render();		
 		
-		//return $this->_view->render('paypalbutton.phtml'); //Zeigt den Button an
+		//return $this->_view->render('paypalbutton.phtml'); 
 	} 
     
 
